@@ -1,0 +1,287 @@
+@media screen and (max-width: 992px) {
+  header .navbar .links {
+    display: block !important;
+    background-color: #eee;
+    border-radius: 2px;
+    position: absolute;
+    top: 68px;
+    right: 0;
+    height: 0;
+    overflow: hidden;
+    transition: 0.4s ease;
+  }
+  header .navbar .links.mob-tab-shape {
+    height: 330px;
+  }
+  header .navbar .links ul {
+    display: block !important ;
+    padding-left: 0;
+    padding-bottom: 10px;
+  }
+  header .navbar .links ul li {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    transition: 0.5s;
+  }
+  header .navbar .links ul li:hover {
+    background-color: #ccc;
+  }
+  header .navbar .links .buttons {
+    text-align: center;
+    padding: 10px;
+  }
+  header .navbar .links .buttons button {
+    display: block !important;
+    padding: 7px 25px;
+    margin-top: 15px;
+  }
+  .landing .image {
+    text-align: center;
+  }
+  .landing .image img {
+    max-width: 100%;
+  }
+  .landing .content p:first-of-type,
+  .landing .content p:last-of-type {
+    text-align: center;
+  }
+  .instructors .boxes {
+    gap: 20px;
+  }
+  .instructors .boxes .box .card-body {
+    text-align: center;
+  }
+  .explore {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .explore .content-box,
+  .explore .images {
+    justify-content: center !important;
+  }
+  .explore .images {
+    padding-top: 20px;
+  }
+  .explore .content-box .content {
+    text-align: center;
+  }
+  .explore .content-box .content button {
+    margin: 0 auto;
+  }
+  .explore .images img:first-of-type {
+    transform: scale(1);
+  }
+  .explore .images img:nth-of-type(2),
+  .explore .images img:nth-of-type(3),
+  .explore .images img:nth-of-type(4) {
+    display: none;
+  }
+  footer {
+    width: calc(100% - 20px);
+  }
+  footer .footer div{
+    width: 50%;
+  }
+  footer .footer,
+  footer .footer div {
+    text-align: center;
+  }
+  footer .footer p ,
+  footer .footer div{
+    width: 100%;
+  }
+  footer .footer div{
+    justify-content: center !important;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .voucher {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .voucher p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  header .navbar .links {
+    right: 15px;
+  }
+  .landing .content p:first-of-type {
+    display: flex;
+    flex-direction: column;
+    font-size: 45px;
+  }
+  .materials.container {
+    margin-top: 15px;
+    width: calc(100% - 20px);
+  }
+  .materials > div:not(:last-child) {
+    padding-bottom: 20px;
+  }
+  .options {
+    padding-left: 0 !important;
+  }
+  .collaspses {
+    text-align: center;
+  }
+  .collaspses button {
+    justify-content: center !important;
+  }
+  .objectives h2 {
+    font-size: 1.2rem;
+  }
+  .objectives h2:nth-of-type(2) {
+    margin-bottom: 20px;
+  }
+  .objectives .carousel .carousel-btns {
+    left: 50%;
+    transform: translate(-50%);
+    top: -35px;
+  }
+  .objectives .carousel .carousel-btns span {
+    width: 30px;
+    height: 30px;
+    padding: 0.5rem;
+  }
+  .objectives .carousel .carousel-btns span svg {
+    font-size: 1rem;
+  }
+  .objectives .carousel .paper-one,
+  .objectives .carousel .paper-two,
+  .objectives .carousel .paper-three,
+  .objectives .carousel .paper-four {
+    display: none;
+  }
+  .objectives .counter .blue {
+    border-radius: 0 0 10px 10px;
+  }
+  .objectives .counter .yellow {
+    border-radius: 10px 10px 0 0;
+  }
+  .courses .header > div {
+    flex-basis: 100%;
+  }
+  .courses .header p {
+    flex-basis: 100%;
+    order: 2;
+    padding-top: 10px;
+  }
+  .courses .boxes .box .card .card-body h5 {
+    font-size: 16px;
+  }
+  .courses .boxes .box .card .card-body {
+    text-align: center;
+  }
+  .feedback .boxes {
+    gap: 20px;
+  }
+  .explore .content {
+    width: 100%;
+  }
+  footer .body {
+    justify-content: center !important;
+  }
+  footer .body div {
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  footer .body .info ul {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .feedback .boxes .box {
+    flex-basis: calc(100% / 3 - 15px);
+  }
+}
+@media screen and (min-width: 992px) {
+  header .navbar .links .buttons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  header .navbar .menu-bar {
+    display: none;
+  }
+  .landing .content {
+    padding-left: 40px;
+  }
+  .instructors .boxes .box {
+    flex-basis: calc(100% / 4 - 20px);
+  }
+  .instructors .boxes .box .image img {
+    position: relative;
+    top: -15px;
+  }
+  footer .footer div{
+    width: 40%;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  .materials div:nth-child(1),
+  .materials div:nth-child(2) {
+    padding-bottom: 15px;
+  }
+  .materials div img {
+    text-align: center;
+  }
+  .collaspses
+    .collapse-container.active
+    .content:not(
+      .collaspses .collapse-container:first-of-type.active .content
+    ) {
+    height: 120px;
+    padding-top: 5px;
+  }
+  .objectives .carousel .paper-one,
+  .objectives .carousel .paper-two,
+  .objectives .carousel .paper-three,
+  .objectives .carousel .paper-four {
+    max-width: 70px;
+  }
+  .objectives .carousel .paper-two {
+    top: 5px;
+  }
+  .objectives .carousel .paper-three {
+    bottom: -15px;
+  }
+  .objectives .carousel .paper-four {
+    bottom: 10px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .landing .content p:first-of-type {
+    font-size: 40px;
+  }
+  .collaspses
+    .collapse-container.active
+    .content:not(
+      .collaspses .collapse-container:first-of-type.active .content
+    ) {
+    height: 120px;
+    padding-top: 5px;
+  }
+  .explore .images img:first-of-type {
+    transform: scale(1);
+  }
+  .explore .images img:nth-of-type(2) {
+    display: none;
+  }
+  .explore .images img:nth-of-type(3) {
+    top: 10px;
+    left: 40px;
+    width: 90px;
+  }
+  footer {
+    width: calc(100% - 20px);
+  }
+}

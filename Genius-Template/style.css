@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap");
+/*reste*/
+:root {
+  --text-color: #616161;
+  --blue-color: #12376b;
+  --second-blue: #286cd5;
+  --red-color: #f04b25;
+  --yellow-color: #f5a805;
+  --grey-color: #f5f5f5;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/*home page body styling  */
+header .voucher {
+  background-color: var(--blue-color);
+}
+header .navbar {
+  position: relative;
+}
+header .navbar .links ul li a {
+  color: var(--blue-color);
+  font-weight: 700;
+}
+header .navbar .links ul li a.active {
+  color: var(--red-color);
+}
+header .navbar .links .buttons a,
+header .navbar .links .buttons button {
+  font-weight: 700;
+}
+header .navbar .links .buttons a {
+  color: #d12215;
+}
+header .navbar .links .buttons button {
+  color: white;
+  background-color: var(--red-color);
+  padding: 12px 55px;
+  transition: 0.4s;
+}
+header .navbar .links .buttons button:hover {
+  background-color: #d12215;
+}
+header .navbar .menu-bar {
+  padding: 5px 10px;
+  border: 4px solid var(--blue-color);
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+header .navbar .menu-bar svg {
+  font-size: 1.4rem;
+  color: var(--red-color);
+}
+.landing .content p:first-of-type {
+  text-align: right;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 1;
+}
+.landing .content p:first-of-type span:first-of-type {
+  color: var(--blue-color);
+}
+.landing .content p:first-of-type span:nth-of-type(2) {
+  color: var(--yellow-color);
+}
+.landing .content p:first-of-type span:last-of-type {
+  color: var(--red-color);
+}
+.landing .content p:last-of-type {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: right;
+  color: var(--text-color);
+}
+.landing .content .buttons button:first-child {
+  background-color: var(--grey-color);
+  color: var(--text-color);
+  font-weight: 700;
+}
+.landing .content .buttons button:last-child {
+  background-color: var(--red-color);
+  color: white;
+  font-weight: 700;
+}
+.landing .content .buttons button:last-child:hover {
+  background-color: #d12215;
+}
+.materials {
+  background-color: var(--grey-color);
+  padding: 25px 0;
+}
+.materials img {
+  max-width: 100%;
+}
+.heading {
+  color: var(--blue-color);
+  display: flex;
+  justify-content: end;
+  padding-right: 45px;
+  position: relative;
+}
+.heading::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 40px;
+  background-color: var(--blue-color);
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+.objectives h2,
+.courses h2,
+.instructors .header h2 {
+  text-align: right;
+  color: var(--blue-color);
+}
+.objectives h2 span {
+  color: var(--yellow-color);
+}
+.collaspses {
+  text-align: right;
+}
+.collaspses button {
+  background-color: var(--grey-color);
+  font-weight: 700;
+  color: var(--blue-color);
+  border-radius: 4px;
+}
+.collaspses button svg {
+  padding-left: 20px;
+}
+.collaspses button:hover {
+  background-color: #c7c3c3;
+  color: white;
+}
+.collaspses .collapse-container .content {
+  color: var(--blue-color) !important;
+  text-align: right;
+  border-radius: 0 0 4px 4px;
+  font-weight: 400;
+  font-size: 15px;
+  height: 0;
+  overflow: hidden;
+  transition: 0.4s ease;
+}
+.collaspses .collapse-container.active .content {
+  height: 100px;
+}
+.collaspses .skills .content {
+  background-color: #f4a90540;
+}
+.collaspses .tech .content {
+  background-color: #286cd540;
+}
+.collaspses .ethics .content {
+  background-color: #f04b2540;
+}
+.collaspses .knwoldge .content {
+  background-color: #12376b40;
+}
+.collaspses button.collaspe-skills,
+.collaspses button.collaspe-tech,
+.collaspses button.collaspe-ethic,
+.collaspses button.collaspe-knwoldge {
+  color: white;
+  border-radius: 4px 4px 0 0;
+}
+.collaspses button.collaspe-skills {
+  background-color: var(--yellow-color);
+}
+.collaspses button.collaspe-tech {
+  background-color: var(--second-blue);
+}
+.collaspses button.collaspe-ethic {
+  background-color: var(--red-color);
+}
+.collaspses button.collaspe-knwoldge {
+  background-color: var(--blue-color);
+}
+.objectives .carousel {
+  background-color: var(--yellow-color);
+}
+.objectives .carousel img {
+  max-width: 100%;
+}
+.objectives .carousel .carousel-btns {
+  top: -90px;
+}
+.objectives .carousel .carousel-btns span {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  border: 1px solid #818181;
+  padding: 0.8rem;
+}
+.objectives .carousel .carousel-btns span svg {
+  font-size: 1.5rem;
+  color: #818181;
+}
+.objectives .carousel .paper-one {
+  left: 40px;
+  top: -30px;
+}
+.objectives .carousel .paper-two {
+  top: 30px;
+  right: 50px;
+}
+.objectives .carousel .paper-three {
+  right: 50px;
+  bottom: -25px;
+}
+.objectives .carousel .paper-four {
+  left: 40px;
+  bottom: 30px;
+}
+.objectives .counter {
+  border-radius: 10px;
+}
+.objectives .counter .blue {
+  background-color: var(--second-blue);
+  border-radius: 0 10px 10px 0;
+}
+.objectives .counter .yellow {
+  background-color: var(--yellow-color);
+  border-radius: 10px 0 0 10px;
+}
+.objectives .counter .red {
+  background-color: var(--red-color);
+}
+.courses .header h2 span {
+  color: var(--second-blue);
+}
+.courses .header p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: right;
+  color: var(--text-color);
+  width: 35%;
+}
+.courses .boxes {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 40px;
+}
+.courses .boxes .box .card {
+  background-color: var(--grey-color);
+  text-align: right;
+  height: 100%;
+}
+.courses .boxes .box .card .card-body .card-title {
+  font-size: 18px;
+}
+.courses .boxes .box .card .card-body .card-text {
+  color: var(--text-color);
+}
+.courses .boxes .box .card .card-body .yellow {
+  color: var(--yellow-color);
+}
+.courses .boxes .box .card .card-body .second-blue {
+  color: var(--second-blue);
+}
+.courses .boxes .box .card .card-body .red {
+  color: var(--red-color);
+}
+.courses .boxes .box .card .card-body .blue {
+  color: var(--blue-color);
+}
+.courses .boxes .box .card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.courses button {
+  background-color: var(--red-color);
+}
+.courses button:hover {
+  background-color: #d12215 !important;
+}
+.feedback .header p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 38px;
+  text-align: right;
+}
+.feedback .header h2 {
+  text-align: right;
+  padding-bottom: 10px;
+}
+.feedback .header h2 span {
+  color: var(--red-color);
+}
+.feedback .boxes .box {
+  background-color: var(--grey-color);
+  border-radius: 10px;
+}
+.feedback .boxes .box P,
+.feedback .boxes .box span:first-of-type {
+  font-size: 18px;
+  text-align: right;
+  line-height: 28px;
+  color: var(--text-color);
+}
+.feedback .boxes .box P {
+  font-weight: 400;
+}
+.feedback .boxes .box span:first-of-type {
+  font-weight: 700;
+}
+.feedback .boxes .box span:last-of-type {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: right;
+  color: var(--text-color);
+}
+.feedback .carousel-btns span,
+.instructors .header .carousel-btns span {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  border: 1px solid #818181;
+  padding: 0.8rem;
+}
+.feedback .carousel-btns span svg,
+.instructors .carousel-btns span svg {
+  font-size: 1.5rem;
+  color: #818181;
+}
+.instructors .header h2 span {
+  color: var(--yellow-color);
+}
+.instructors .boxes .box .card-body {
+  text-align: right;
+}
+.instructors .boxes .box h5 {
+  line-height: 24px;
+  font-size: 25px;
+  font-weight: 700;
+}
+.instructors .boxes .box p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--text-color);
+}
+.instructors .boxes .one h5 {
+  color: var(--yellow-color);
+}
+.instructors .boxes .two h5 {
+  color: var(--second-blue);
+}
+.instructors .boxes .three h5 {
+  color: var(--red-color);
+}
+.instructors .boxes .four h5 {
+  color: var(--blue-color);
+}
+.instructors .boxes .box .card-body {
+  background-color: var(--grey-color);
+}
+.instructors .boxes .one .image {
+  background-color: #f4a90540;
+}
+.instructors .boxes .two .image {
+  background-color: #286cd540;
+}
+.instructors .boxes .three .image {
+  background-color: #f04b2540;
+}
+.instructors .boxes .four .image {
+  background-color: #12376b40;
+}
+.instructors .boxes .box .card {
+  height: 100%;
+  border: 0 !important ;  
+}
+.instructors .boxes .box .card-body {
+  border-radius: 0 0 8px 8px;
+}
+.instructors .boxes .box .image {
+  border-radius: 8px 8px 0 0;
+  height: 235px ;
+}
+.instructors .boxes .box .image img {
+  max-width: 100%;
+  height: calc(100% + 15px);
+}
+.explore > div {
+  background-color: var(--second-blue);
+  border-radius: 10px;
+}
+.explore .content-box {
+  flex: 1;
+}
+.explore .content {
+  text-align: right;
+  width: 400px;
+}
+.explore .content h5 {
+  font-size: 33px;
+  line-height: 50px;
+}
+.explore .content p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  padding-bottom: 10px;
+}
+.explore .content button {
+  color: var(--second-blue) !important;
+  margin-left: auto;
+}
+.explore .images img {
+  max-width: 100%;
+  transform: scale(1.3);
+}
+.explore .images img:nth-of-type(2),
+.explore .images img:nth-of-type(3),
+.explore .images img:nth-of-type(4) {
+  position: absolute;
+}
+.explore .images img:nth-of-type(2) {
+  left: 50px;
+}
+.explore .images img:nth-of-type(3) {
+  left: 50px;
+  top: -25px;
+}
+.explore .images img:nth-of-type(4) {
+  top: 100px;
+}
+footer {
+  background-color: var(--red-color);
+  width: calc(100% - 80px);
+  margin: 80px auto;
+  padding: 40px 80px;
+}
+footer .body .info {
+  text-align: right;
+  flex-basis: 50%;
+}
+footer .footer {
+  border-top: 1px solid white;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
